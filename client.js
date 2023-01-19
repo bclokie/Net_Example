@@ -12,5 +12,7 @@ conn.on("data", (data) => {
 });
 
 conn.on("connect", () => {
-  conn.write("Hello from client!");
+  console.log("Successfully connected to game server");
+  conn.write("Hello from client!\nName: BCC");
+ 
 });
